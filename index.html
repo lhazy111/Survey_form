@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -14,8 +15,102 @@
 </head>
 
 <body>
-    ß
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center" id="title">Welcome to freecodecamp survey</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p id="description"> The aim of the survey is to check your preferences</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form id="survey-form">
+                        <div class="form-group">
+                            <label id="name-label" for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label id="email-label" for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="email@xx.com" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label id="number-label" for="age">Age</label>
+                            <input type="number" class="form-control" id="number" min="1" max="105" placeholder="22"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropdown">Gender</label>
+                            <select id="dropdown" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Hand preference</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Left-handed</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Right-handed</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Both</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Favourite color/s</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Blue">
+                                <label class="form-check-label" for="inlineCheckbox1">Blue</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Red">
+                                <label class="form-check-label" for="inlineCheckbox2">Red</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Green">
+                                <label class="form-check-label" for="inlineCheckbox3">Green</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Yellow">
+                                <label class="form-check-label" for="inlineCheckbox3">Yellow</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Black">
+                                <label class="form-check-label" for="inlineCheckbox3">Black</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Anything else You want to add about
+                                yourself?</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- Optional JavaScript -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
